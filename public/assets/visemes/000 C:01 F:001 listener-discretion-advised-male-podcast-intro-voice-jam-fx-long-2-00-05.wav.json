@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "soundFile": "listener-discretion-advised-male-podcast-intro-voice-jam-fx-long-2-00-05.wav",
+    "duration": "6.90"
+  },
+  "mouthCues": [
+    {
+      "start": "0.00",
+      "end": "0.03",
+      "value": "X"
+    },
+    {
+      "start": "0.03",
+      "end": "0.10",
+      "value": "B"
+    },
+    {
+      "start": "0.10",
+      "end": "0.16",
+      "value": "C"
+    },
+    {
+      "start": "0.16",
+      "end": "0.37",
+      "value": "B"
+    },
+    {
+      "start": "0.37",
+      "end": "0.58",
+      "value": "E"
+    },
+    {
+      "start": "0.58",
+      "end": "0.83",
+      "value": "F"
+    },
+    {
+      "start": "0.83",
+      "end": "1.05",
+      "value": "B"
+    },
+    {
+      "start": "1.05",
+      "end": "1.12",
+      "value": "C"
+    },
+    {
+      "start": "1.12",
+      "end": "1.26",
+      "value": "D"
+    },
+    {
+      "start": "1.26",
+      "end": "1.50",
+      "value": "B"
+    },
+    {
+      "start": "1.50",
+      "end": "1.71",
+      "value": "F"
+    },
+    {
+      "start": "1.71",
+      "end": "1.78",
+      "value": "B"
+    },
+    {
+      "start": "1.78",
+      "end": "1.87",
+      "value": "A"
+    },
+    {
+      "start": "1.87",
+      "end": "2.03",
+      "value": "B"
+    },
+    {
+      "start": "2.03",
+      "end": "2.10",
+      "value": "G"
+    },
+    {
+      "start": "2.10",
+      "end": "2.38",
+      "value": "E"
+    },
+    {
+      "start": "2.38",
+      "end": "2.80",
+      "value": "B"
+    },
+    {
+      "start": "2.80",
+      "end": "2.87",
+      "value": "C"
+    },
+    {
+      "start": "2.87",
+      "end": "3.01",
+      "value": "B"
+    },
+    {
+      "start": "3.01",
+      "end": "3.18",
+      "value": "X"
+    },
+    {
+      "start": "3.18",
+      "end": "3.94",
+      "value": "B"
+    },
+    {
+      "start": "3.94",
+      "end": "4.01",
+      "value": "C"
+    },
+    {
+      "start": "4.01",
+      "end": "4.36",
+      "value": "B"
+    },
+    {
+      "start": "4.36",
+      "end": "4.50",
+      "value": "G"
+    },
+    {
+      "start": "4.50",
+      "end": "4.64",
+      "value": "D"
+    },
+    {
+      "start": "4.64",
+      "end": "5.13",
+      "value": "B"
+    },
+    {
+      "start": "5.13",
+      "end": "5.68",
+      "value": "X"
+    },
+    {
+      "start": "5.68",
+      "end": "5.80",
+      "value": "H"
+    },
+    {
+      "start": "5.80",
+      "end": "5.87",
+      "value": "C"
+    },
+    {
+      "start": "5.87",
+      "end": "5.94",
+      "value": "B"
+    },
+    {
+      "start": "5.94",
+      "end": "6.15",
+      "value": "F"
+    },
+    {
+      "start": "6.15",
+      "end": "6.36",
+      "value": "B"
+    },
+    {
+      "start": "6.36",
+      "end": "6.90",
+      "value": "X"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "shapeKeys": {
+    "file": "BaseMesh-Optimized-ShapeKeys.glb",
+    "path": "/assets/models/shape_keys/BaseMesh-Optimized-ShapeKeys.glb",
+    "bytes": 4908784,
+    "sha256": "0683a736437ad84f0f7c4085a8ec7ee7e958178cfbeb1a360094142def6de284"
+  },
+  "poseFrames": {
+    "file": "character_01_poseframes.glb",
+    "path": "/assets/models/pose_frames/character_01_poseframes.glb",
+    "bytes": 3449668,
+    "sha256": "4fb5d6ebd0a390534f956670349a4260a05196698dadf5228c414316289369eb"
+  }
+}

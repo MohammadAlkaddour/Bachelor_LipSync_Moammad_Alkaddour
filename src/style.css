@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #111;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#manual-pose-ui,
+#lipsync-debug-ui,
+#control-panel,
+#evaluation-panel {
+  position: fixed;
+  z-index: 10;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  max-width: min(420px, calc(100vw - 32px));
+  font-size: 12px;
+}
+
+#manual-pose-ui {
+  top: 16px;
+  left: 16px;
+}
+
+#lipsync-debug-ui {
+  top: 16px;
+  right: 16px;
+}
+
+#control-panel {
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#evaluation-panel {
+  bottom: 16px;
+  right: 16px;
+  max-width: min(640px, calc(100vw - 32px));
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+#manual-pose-ui h3,
+#lipsync-debug-ui h3,
+#control-panel h3,
+#evaluation-panel h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #c8c8c8;
+}
+
+#evaluation-panel h4 {
+  margin: 12px 0 6px;
+  font-size: 12px;
+  color: #c8c8c8;
+}
+
+.debug-pose-buttons,
+.panel-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.panel-button-row + .panel-button-row {
+  margin-top: 8px;
+}
+
+.debug-pose-buttons button,
+.panel-button-row button {
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.debug-pose-buttons button:hover,
+.panel-button-row button:hover {
+  background: #3a3a3a;
+}
+
+.debug-pose-buttons button:active,
+.panel-button-row button:active {
+  background: #4a4a4a;
+}
+
+.panel-button-row button.is-active {
+  background: #4a6a4a;
+  border-color: rgba(160, 220, 160, 0.45);
+}
+
+.panel-button-row button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.panel-select {
+  width: 100%;
+  padding: 5px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #f0f0f0;
+  font-size: 12px;
+}
+
+.panel-status {
+  margin-top: 6px;
+  color: #9a9a9a;
+  white-space: pre-line;
+}
+
+.panel-status.is-error {
+  color: #f08a7a;
+}
+
+.lipsync-debug-line,
+#evaluation-panel {
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.evaluation-live {
+  margin-bottom: 8px;
+  color: #c8c8c8;
+}
+
+#evaluation-panel .panel-button-row,
+#evaluation-panel .evaluation-debug,
+.evaluation-status {
+  margin-top: 8px;
+}
+
+.evaluation-status.is-error {
+  color: #f08a7a;
+}
+
+.evaluation-result {
+  margin-bottom: 8px;
+}
+
+.evaluation-debug {
+  color: #9a9a9a;
+}
+
+.evaluation-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.evaluation-table th,
+.evaluation-table td {
+  padding: 2px 8px 2px 0;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.evaluation-table thead th {
+  color: #c8c8c8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* manual poses would interrupt a benchmark run */
+body.benchmark-running #manual-pose-ui {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Study Capture Mode shows only the character and the playback controls */
+body.study-capture #manual-pose-ui,
+body.study-capture #lipsync-debug-ui,
+body.study-capture #evaluation-panel,
+body.study-capture .panel-section--dev,
+body:not(.study-capture) .panel-section--study {
+  display: none;
+}
+
+/* hide controls during playback for clean recordings */
+body.study-capture.is-playing #control-panel {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+body.study-capture.is-playing #control-panel:hover {
+  opacity: 1;
+}
